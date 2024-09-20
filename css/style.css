@@ -373,4 +373,135 @@ a {
     }
 }
 
+.service .container .card .box img {
+    transition: transform .4s;
+}
+
+
+.service .container .card .box img:hover {
+    transform: scale(1.1);
+}
+
 /* end service */
+
+/* start portfolio */
+.portfolio {
+    background-color: var(--yellow-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.portfolio .container .heading-text::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-background);
+    left: 0;
+    bottom: 0;
+}
+
+.portfolio .container .heading-text h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.portfolio .container .heading-text h1+p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+@media (max-width:767px) {
+    .portfolio .container .heading-text h1 {
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+
+    .portfolio .container .heading-text h1+p {
+        font-size: 18px;
+    }
+}
+
+.portfolio .container ul {
+    gap: 10px;
+}
+
+.portfolio .container ul li {
+    padding: 10px;
+    border: 1px solid black;
+    flex: 1;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.portfolio .container ul li:first-child {
+    background-color: var(--black-background);
+    color: white;
+}
+
+.portfolio .container ul li:hover {
+    background-color: var(--black-background);
+    color: white;
+}
+
+.portfolio .container .card .box img {
+    max-width: 100%;
+}
+
+.portfolio .container .card .portf {
+    overflow: hidden;
+}
+
+.portfolio .container .card .portf::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24 26 28/ 85%);
+    left: 0;
+    bottom: -100%;
+    transition: bottom .4s;
+}
+
+.portfolio .container .card .box:hover::before {
+    bottom: 0;
+}
+
+.portfolio .container .card .portf::after {
+    font-family: "Font Awesome 6 Free";
+    content: '\2b';
+    position: absolute;
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: top .4s;
+}
+
+.portfolio .container .card .box:hover::after {
+    top: 38%;
+}
+
+.portfolio .container .card .box .down-list {
+    background-color: var(--black-background);
+    color: white;
+    padding: 20px;
+    margin-top: -4px;
+    z-index: 3;
+    position: relative;
+}
+
+.portfolio .container .card .box .down-list h3 {
+    color: var(--yellow-background);
+    font-weight: 400;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+
+/* end portfolio */
