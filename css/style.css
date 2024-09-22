@@ -892,3 +892,229 @@ a {
 }
 
 /* end secondary client */
+
+/* start price */
+.price {
+    background-color: var(--yellow-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.price .container .heading-text::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--black-background);
+    left: 0;
+    bottom: 0;
+}
+
+.price .container .heading-text h1 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: var(--black-background);
+}
+
+.price .container .heading-text h1+p {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--black-background);
+}
+
+@media (max-width:767px) {
+    .price .container .heading-text h1 {
+        font-size: 36px;
+        margin-bottom: 18px;
+    }
+
+    .price .container .heading-text h1+p {
+        font-size: 18px;
+    }
+}
+
+.price .container .card .box {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.price .container .card .box .price-head {
+    background-color: var(--black-background);
+    color: var(--yellow-background);
+    text-transform: uppercase;
+    padding: 34px;
+    font-weight: normal;
+    font-size: 36px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.price .container .card .box .price-list {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.price .container .card .box .price-list li:first-child {
+    font-size: 32px;
+    color: #747C89;
+    font-weight: 300;
+    position: relative;
+    padding: 20px;
+}
+
+.price .container .card .box .price-list li:not(:first-child) {
+    position: relative;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #747C89;
+}
+
+.price .container .card .box .price-list li span {
+    font-weight: bold;
+}
+
+.price .container .card .box .price-list li::before {
+    content: '';
+    position: absolute;
+    width: 82%;
+    height: 1px;
+    background-color: #747C89;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.price .container .card .box .buy {
+    margin: 10px 0 30px;
+}
+
+.price .container .card .box .buy a {
+    text-transform: uppercase;
+    padding: 12px 26px;
+    background-color: var(--black-background);
+    color: var(--yellow-background);
+    font-size: 18px;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.price .container .card .box .buy:hover a {
+    background-color: var(--yellow-background);
+    color: var(--black-background);
+}
+
+.price .container .price-foot {
+    font-size: 22px;
+}
+
+.price .container .price-foot+.foot-button a {
+    padding: 12px 26px;
+    font-size: 20px;
+    border-radius: 2px;
+    position: relative;
+    transition: 0.3s;
+    border: 1px solid var(--black-background);
+    color: black;
+}
+
+.price .container .price-foot+.foot-button a:hover {
+    background-color: var(--black-background);
+    color: white;
+}
+
+/* end price */
+
+/* start subscribe */
+.subscribe {
+    background-image: url(../images/brand-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.subscribe .container .head-title h2 {
+    color: var(--yellow-background);
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.subscribe .container .head-title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+}
+
+.subscribe .container .sub-card .left {
+    width: 500px;
+    color: white;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 17px;
+}
+
+.subscribe .container .sub-card .right {
+    flex: 1;
+    margin-left: 70px;
+}
+
+.subscribe .container .sub-card .right [type="email"] {
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+.subscribe .container .sub-card .right [type="email"]::placeholder {
+    color: #8c94a1;
+}
+
+.subscribe .container .sub-card .right [type="email"]:focus {
+    box-shadow: 0 0 10px 3px rgba(242, 13, 143, 0.6);
+}
+
+.subscribe .container .sub-card .right [type="submit"] {
+    padding: 16px 26px;
+    border: none;
+    background-color: var(--yellow-background);
+    cursor: pointer;
+    position: relative;
+    transition: .3s background-color;
+}
+
+.subscribe .container .sub-card .right [type="submit"]:hover {
+    background-color: rgb(235, 232, 232);
+}
+
+@media (max-width:1200px) {
+    .subscribe .container .sub-card .right {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:991px) {
+    .subscribe .container .sub-card {
+        flex-direction: column;
+    }
+
+    .subscribe .container .sub-card .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .subscribe .container .sub-card .right{
+        width: 100%;
+    }
+}
+
+/* end subscribe */
